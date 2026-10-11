@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="Tampilan.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand">SISTEM INFORMASI</div>
+        <ul class="nav-menu">
+          <li><a href="miniproject.html">Beranda</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="informasi.html">Informasi</a></li>
+          <li><a href="pendaftaran.html">Pendaftaran</a></li>
+          <li><a href="biodata.html">Developer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main container">
+      <section class="page-content form-page">
+        <p class="section-tag">Pendaftaran</p>
+        <h1>Formulir Pendaftaran</h1>
+
+        <form class="registration-form">
+          <div class="field-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="hp">Nomor HP</label>
+            <input type="tel" id="hp" name="hp" required />
+          </div>
+
+          <div class="field-group">
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi" required>
+              <option value="">-- Pilih --</option>
+              <option value="si">Sistem Informasi</option>
+              <option value="ti">Teknik Informatika</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+              <label><input type="radio" name="jk" value="L" required /> Laki-laki</label>
+              <label><input type="radio" name="jk" value="P" /> Perempuan</label>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Tuliskan alamat lengkap"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Daftar</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
